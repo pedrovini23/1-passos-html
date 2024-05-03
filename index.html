@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto </title>
+  </head>
+  <body>
+    <h1><mark> Primeiros passos com <abbr title="Hyper Text Markup">HTML</abbr> </mark></h1>
+    <h2 id="indice"><u> Indice</u></h2>
+    <ul>
+      <li><a href="#xx">História dos computadores</a></li>
+      <li><a href="#clientes">O que são clientes</a></li>
+      <li>
+        <a href="#servers">Servidores</a>
+        <ol>
+          <li><a href="#web">Tipo web </a></li>
+          <li><a href="#proxy">Tipo proxy</a></li>
+          <li><a href="#email">Tipo email</a></li>
+          <li><a href="#database">Tipo database</a></li>
+          <li><a href="#dns">Tipo dns</a></li>
+          <li><a href="#intranet">Tipo intranet</a></li>
+        </ol>
+      </li>
+
+      <li><a href="#firewall">O que é Firewall</a></li>
+      <li><a href="#ftp">O que é <abbr title="File Transfer Protocol">FTP</abbr> </a></li>
+      <li>
+        Grandes nomes envolvidos
+        <ul>
+          <li>Grace Murray Hopper<sup><a href="#grace">[1]</a></sup></li>
+          <li>Josepg Carl Robnett licklider<sub><a href="#robnett">[2]</a></sub></li>
+          <li>Rober E. Khan <sup><a href="#khan">[3]</a></sup> </li>
+          <li>Tim Berners-Lee<sub><a href="#tim">[4]</a></sub> </li>
+          <li>Marc Andreessen <sup><a href="#marc">[5]</a></sup></li>
+          <li>Bill Gate <sub><a href="#gates">[6]</a></sub> </li>
+          <li>Steve Jobs <sup><a href="#jobs">[7]</a></sup> </li>
+        </ul>
+      </li>
+    </ul>
+    <hr />
+    <h3><strong> História dos computadores</strong></h3>
+    <h3 id="xx"> <u> SéculoXX </u> </h3>
+    <h4>
+      <a href="#indice"><small> voltar</small></a>
+    </h4>
+    <p>
+      <strong>Década de 1940:</strong> Surge o ENIAC,o primeiro computador
+      eletronico de uso geral
+    </p>
+    <p>
+      <strong> Década de 1950 e 1960:</strong>Crescimento dos computadores
+      mainframes,usados principalmente por grandes organizaçoes para
+      processamento de dados
+    </p>
+    <p>
+      <strong> Décadas de 1970 e 1980:</strong> Introdição dos
+      microprocessadores e PCs pessoais, popularizando o acesso a computaçao
+    </p>
+    <p>
+      <strong> Décadas de 1980 e 1990:</strong> A explosão da internet e o
+      desenvolvimeneeto de sistemas operacionais amigaveis, como o Windows da
+      microsoft e o MacOs da Apple
+    </p>
+    <p>
+      <strong> Décadas de 2000 ate hoje:</strong> O advento da computaçao em
+      nuvem,dispositivos moveis e o crescimento exponencial da capacidade de
+      processamento e armazenamento
+    </p>
+    <p>
+      <i
+        ><strong>
+          Com o avanco do tempo, tecnologias como inteligencia
+          artificial,machine learning,rede neurais,computaçao quantica e
+           emergentes prometem ditar ainda mais as nossas vidas</strong
+        ></i
+      >
+    </p>
+    <hr />
+    <h2 id="clientes">  O que são clientes</h2>
+    <h4><a href="#indice">voltar</a></h4>
+    <p>
+      Geralmente o cliente pode ser considerado os dispositivos como
+      computadores smartphones,tablets ate mesmo um navegador web é um cliente
+      que solicita páginas da web e servidores da internet para a exibição ao
+      usuario
+    </p>
+    <p>
+      O cliente acessa o servidor e ele te retorna (HTML,CSS ,
+      Javascript,imagens...) chamados também de arquivos estaticos são os
+      arquivos que são enviados do servidor para o cliente. Exemplo voce entra
+      do seu dispositivo e acessa o site essa requisiçao é mandada para o
+      servidor, ele processa e manda os arquivos para voce e o navegador gera o
+      cache ,ele pega esses arquivos e armazena no computador do cliente , assim
+      quando o cliente acessar o site de novo não precisara carregar o arquivo
+      todo desde o inicio
+    </p>
+    <hr />
+    <h2 id="servers">O que são servidores</h2>
+    <h4><a href="#indice">voltar</a></h4>
+    <p>
+      Servidores são computadores ou sistemas de computadores que fornecem
+      serviços ,recursos ou dados para outros dispositivos ou programas,
+      conhecidos como clientes,em uma rede. Eles podem fornecer uma variedade de
+      funçoes, como hospedagem de sites, armazenamento de dados, processamento
+      de informaçoes , entre outros.
+    </p>
+
+    <h2>Tipos de servidores</h2>
+    <h3 id="web">Servidor web (Web-server)</h3>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      Um servidor web é um software responsavel por atender solicitaçoes de
+      clientes(geralmente navegadores da web) e entregar páginas da web,arquivos
+      e outros recursos pela internet. Ele recebe solicitaçoes HTTP dos
+      clientes,processa essas solicitaçoes e retorna respostas HTTP,que
+      geralmente são páginas web,imagem,arquivos css,javascript entre outros
+    </p>
+    <p>
+      Existem diferentes tipos de servidores web sendo os mais comuns o Apache
+      HTTP Serve, o Nginx, microsoft internet information services (IIS) e o
+      litespeed Os servidores web também podem executar aplicativos da web
+      dinamicos,processando solicitaçoes e gerando conteúdo sob demando com base
+      em parametros específicos. Isso e comumente feito usando tecnologias como
+      PHP,Phyton,Ruby,Java,entre outras,em conjunto com um servidor web
+    </p>
+    <hr />
+    <h3 id="proxy">Servidor proxy (Proxy-server)</h3>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      Esse servidor é, por exemplo, intermediário entre um acesso feito por uma
+      estação de trabalho a um servidor web, verificando se existe algum acesso
+      recente gravado (cache), filtrando e gerenciando cada requisição e
+      melhorando assim, o desempenho e a segurança do sistema. O servidor proxy
+      atua como intermediario entre o seu dispositivo e a internet. Quando voce
+      solicita uma página da web ou um recurso online , sua solicitaçao vai
+      primeiro para o servidor proxy,que entao encaminha para o destino.isso
+      pode ajudar com segurança,privacidade e desempenho, filtrando conteúdo
+      indesejado, ocultando seu endereço IP e armazenando em cache conteúdos
+      para carrega-lo mais rapidamente
+    </p>
+    <p>
+      Também e possivel configurar o servidor proxy para monitorar e registrar
+      todo o tráfego que passa por ele,incluindo o histórico de acesso dos
+      funcionarios.isso permite que voce veja quais sites foram acessados , a
+      que horas e por quanto tempo.esse tipo de monitoramento e comumente usado
+      em ambientes corporativos para garantir o uso adequado dos recursos da
+      rede e para proteger contra atividades não autorizadas ou maliciosas.Porem
+      esse tipo de monitoramento seja feito de acordo com as leis de privacidade
+      e regulamentaçao relevantes ou seja os funcionarios tem que ter
+      consciencia de que estão sendo monitorados e ter o consenso ,provavelmente
+      na assinatura do contrato deve ta lá explicando.
+    </p>
+    <p>
+      Imagina voce trabalhando na empresa e voce tem o seu própio computador
+      conectado na rede da própia empresa , porem essa empresa tem um servidor
+      proxy , pois bem vamos dizer que voce quer visitar algum site de viagem
+      essa requisiçao passsa pelo servidor proxy e se ele tiver permitido o
+      acesso a esse site voce consegue acessa-lo senão voce não vai conseguir
+      acessar ,caso o acesso esteje bloquado voce pode tentar acessar pelo seus
+      dados moveis que não esta conectado na rede da empresa e o acesso seje
+      permitido
+    </p>
+    <hr />
+    <h3 id="email">Servidor E-mail (E-mail-server)</h3>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      Um servidor de e-email é um tipo especifico de servidor que é responsavel
+      por lidar com o envio,recebimento e armazenamento de e-emails. Ele é
+      fundamentalpara o funcionamentodo sistema de e-mail de uma organizacao ou
+      provedor de serviços de e-mail Servidores de e-mail funcionam de forma
+      semelhante aos servidores web, mas em vez de lidar com solicitaçoes
+      HTTP,eles lidam com protocolos de e-mail, como SMTP (Simple Mail Transfer
+      Protocol) para envio de e-mails, IMAP (Internet Message Acess Protocol) e
+      POP3 (Post Office Protocol version 3) para acesso e recebimento de e-mails
+      Também existem servidores de e-mail de codigo aberto, como postfix,Exim e
+      dovecot e soluçoes comerciais como microsoft exchanger server e Zimbra
+      Collaboration Suite. Esses servidores de e-mail podem ser configurados em
+      servidores dedicados ou em nuvem, dependendo das necessidades e
+      preferencias da organizaçao.
+    </p>
+    <hr />
+    <h3 id="database">Servidor banco de dados (Database-server)</h3>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      Um servidor de banco de dados geralmente executa um sistema de
+      gerenciamento de banco de dados (SGBD), como MySQL, PostgreSQL, SQL
+      Server, Oracle Database, entre outros. Esses SGBDs permitem criar e
+      gerenciar bancos de dados , tabelas,indices e outras estrutura de dados,
+      alem de fornecer uma linguagem para consultar e manipular os dados
+      armazenados. Podem ser configurados em diferentes ambientes, incluindo
+      servidores dedicados, maquinas virtuais e serviços de nuvem. Eles podem
+      ser projetados para atender a diferentes necessidades de escalabilidade,
+      desempenho, disponibilidade e segurança,dependendo dos requisitos da
+      aplicaçao e da organizaçao Desempenham um papel critico em muitas
+      aplicaçoes, incluindo sistemas de gestão empresarial (ERP), sistemas de
+      comercio eletronico, aplicativos de midia social,sistemas de gerenciamento
+      de conteúdo(CMS) e muito mais
+    </p>
+    <p>
+      Um servidor banco de dados é como uma grande caixa onde voce guarda
+      informaçoes importantes. Ele armazena tudo de forma organizada e segura,
+      como nome, numeros e qualquer outro dado que voce queira guardar. Quando
+      voce ou seus aplicativos precisam dessa informaçoes, o servidor as entrega
+      rapidamente.como um guarda-roupa enorme para guardar todos os seus dados
+    </p>
+    <hr />
+    <h3 id="dns">Servidor DNS (Domain Name Service-server) </h3>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      E um servidor que detem uma lista de nomes e IPs . Protocolo TCPIP entao
+      cada maquina cada servidor tem um IP esse IP é como se fosse o rg da
+      maquina . O DNS traduz/pega aquele endereço (www ...com) vai na lista dele
+      e ve qual IP o nome www... esta relacionado e direciona a ele. Ele
+      redireciona o nome para um IP especifico
+    </p>
+    <p>
+      Geralmente quando voce faz a contratação da hospedagem do site voce faz a
+      contratação do dominio também
+    </p>
+    <hr />
+    <h3 id="intranet">Servidor intranet (Intranet-server)</h3>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      O servidor intranet e um servidor dedicado a hospedagem de uma intranet,
+      que é uma rede interna de uma organizaçao que utiliza tecnologias da
+      internet para compartilhar informaçoes , recursos e colaborar entre os
+      membros da organizaçao. Ele hospeda os recursos e aplicativos específicos
+      da intranet,como sites internos ,portais de colaboraçao,sistemas de
+      gerenciamento de documentos calendarios compartilhados , diretorios de
+      funcionarios , forums de discussoes entre outros. Alem disso ele pode ser
+      configurado para fornecer acesso seguro aos recursos internos da
+      organizaçao, restringindo o acesso apenas aos usuarios autorizados. Isso e
+      frequentemente feito usando tecnologias de autenticaçao e controle de
+      acesso, como logins e senhas, grupos de usuarios, VPNs (Virtual private
+      Network) e firewalls
+    </p>
+    <hr />
+    <h2 id="firewall">Firewall</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      É um sistema de segurança que controla e monitora o tráfego de rede com
+      base em regras de segurança predefinidas.ele atua como uma barreira entre
+      uma rede interna privada e redes externas , como a internet,filtrando o
+      tráfego de entrada e saida com o objetivo de bloquear ameaças,como ataque
+      de hackers,malware e acesso não autorizado. Os firewalls podem ser
+      implementados tanto em nivel de software quanto de hardware e são uma
+      parte fundamental da estrategia de segurança cibernética de uma
+      organizaçao. É como se fosse um guarda de segurança para o seu computador
+      ou rede. Ele verifica todo o tráfego que entra e sai,decidindo se e seguro
+      ou não com base em regras predefinidas. Se algo suspeito tentar entrar, o
+      firewall bloqueia. É como ter um filtro de segurança para proteger seus
+      dados e sistemas contra ameaças da internet.
+    </p>
+
+    <p>
+      Ele pode ser encontrado por exemplo no roteador da sua casa: muitos
+      roteadores residenciais tem um firewall embutido que ajuda a proteger toda
+      a sua rede domestica contra ameaças da internet No seu dispositivo(phone
+      ou pc) Ales do firewall do roteador, muitos sistemas operacionais, como o
+      windows, macOS e o android, também tem seus propios firewalls. Eles ajudam
+      a proteger o dispositivo individualmente,controlando o tráfego que entra e
+      sai dele
+    </p>
+    <hr />
+    <h2 id="ftp">FTP (File transfer protocol)</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <p>
+      FTP, ou protocolo de transferencia de arquivos(File transfer protocol) é
+      um protocolo de rede usado para transferir arquivos entre computadores em
+      uma rede 1. Envio e recebimentto de arquivos: O FTP permite que voce envie
+      arquivos do seu computador para um servidor remoto (upload)e também baixe
+      arquivos desse servidor para o seu computador(download) 2. Autenticaçao:
+      para acessar um servidor FTP , voce geralmente precida fornecer um nome e
+      usuario e uma senha. Isso garante que apenas pessoas autorizadas possam
+      enviar ou receber arquivos 3. Interface de usuario: voce pode usar
+      programas especiais chamados clientes FTP para se conectar a servidores
+      FTP. Esses programas fornecem uma interface facil de usar para navegar
+      pelos diretorios do servidor , enviar e baixar arquivos, e gerencias suas
+      transferencias
+    </p>
+    <p>
+      Exemplo Imagina que voce tem 2 computadores um em casa e outro no
+      escritorio. Voce quer enviar um arquivo do seu computador em casa para o
+      do escritorio, mas eles não estão na mesma rede .é ai que entra o FTP. O
+      FTP é como um carteiro que pega o arquivo da sua casa e o entrega no
+      escritorio. Para fazer isso voce precisa de um programa especial no seu
+      computador chamado cliente ftp. Ele conecta ao servidor FTP no escritorio,
+      onde o arquivo sera entregue. Entao , voce usa o cliente FTP para "pedir"
+      ao servidor FTP no escritorio que aceite o arquivo que voce deseja
+      enviar.Depois o servidor FTP "recebe" o arquivo e o armazena lá . Quando
+      precisar voce pode "pedir" ao servidor FTP para enviar o arquivo de volta
+      para o seu computador em casa
+    </p>
+    <h2>Grandes nomes</h2>
+    <h2 id="grace">Grace Murray Hopper</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <ul>
+      <li>Marinha dos Estados Unidos</li>
+      <li>Uma das primeiras programadoras do Mark I em 1944</li>
+      <li>
+        Criadora da linguagem de programação de alto nivel Flow-Matic (base do
+        COBOL)
+      </li>
+    </ul>
+
+    <h2 id="robnett">Josesph Carl Robnett</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <ul>
+      <li>
+        Recrutado pela DARPA depois de teorizar sobre uma rede "galatica" de
+        computadores
+      </li>
+      <li>
+        Plantou a "semente" da comunicaçao entre dois pontos distintos atraves
+        do computador
+      </li>
+    </ul>
+
+    <h2 id="khan">Robert E. Khan</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <ul>
+      <li>Primeira apresentaçao publica da ARPAnet</li>
+      <li>Apresentou o primeiro email</li>
+      <li>Criador do TCP/IP junto com vinton cerf</li>
+    </ul>
+
+    <h2 id="tim">Tim Berners-Lee</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <ul>
+      <li>Inventor do WWW</li>
+      <li>Diretor do world wide web consortion(W3C)</li>
+      <li>
+        Diversas homenagens,incluindo titulo de cavaleiro dados pela rainha
+        elizabeth II
+      </li>
+      <li>Popularizou o HTTP e HTML</li>
+    </ul>
+
+    <h2 id="marc">Marc Andreessen</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <ul>
+      <li>
+        (re)inventou o navegador. O netscape Navigator feito a partir do
+        Mosaic(antigo navegador)
+      </li>
+      <li>Tornou o navegador "amigavel" ,com recursos graficos</li>
+      <li>
+        Deteve 90% da internet na epoca,mas sendo superado pelo internet
+        Explorer anos mais tarde
+      </li>
+    </ul>
+
+    <h2 id="gates">Bill Gates</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <ul>
+      <li>Fundador da microsoft</li>
+      <li>Equipe da microsoft criou o internet explorer</li>
+      <li>
+        Tornou acessivel para todos o computador, e com isso o acesso a internet
+      </li>
+    </ul>
+    <h2 id="jobs">Steve Jobs</h2>
+    <h4><a href="#indice">voltar</a></h4>
+
+    <ul>
+      <li>Fundador da apple</li>
+      <li>Concorrente direta da microsoft</li>
+      <li>oje atraves do lancamento do iphone em 29 de junho de 2007</li>
+    </ul>
+
+    <h1>Obrigado por chegar até aqui</h1>
+
+      <p><del>No futuro talvez quem sabe eu atualize porem nao tenho planos para isso </del></p>
+  </body>
+</html>
